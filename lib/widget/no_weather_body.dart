@@ -8,15 +8,18 @@ class NoWeatherBody extends StatelessWidget {
     return const Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              'there is no weather start 😞',
-              style: TextStyle(fontSize: 30),
+              'there is no weather 😞 start',
+              style: TextStyle(fontSize: 26),
+            ),
+            SizedBox(
+              height: 4,
             ),
             Text(
               'searching now 🔍',
-              style: TextStyle(fontSize: 30),
+              style: TextStyle(fontSize: 26),
             ),
           ],
         ),

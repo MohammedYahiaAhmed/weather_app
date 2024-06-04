@@ -4,10 +4,14 @@ import 'package:weather_app/cubits/get_weather_cubit/get_weather_cubit.dart';
 import 'package:weather_app/main.dart';
 import 'package:weather_app/model/weather_model.dart';
 // import 'package:weather_app/model/weather_model.dart';
+// import 'package:weather_app/model/weather_model.dart';
 
 class WeatherInfoBody extends StatelessWidget {
-  const WeatherInfoBody({super.key});
-
+  const WeatherInfoBody({
+    super.key,
+    required this.weather,
+  });
+  final WeatherModel weather;
   @override
   Widget build(BuildContext context) {
     WeatherModel weatherModel =
@@ -25,6 +29,7 @@ class WeatherInfoBody extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
               weatherModel.cityName,
@@ -49,6 +54,7 @@ class WeatherInfoBody extends StatelessWidget {
                   ),
                 ),
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       'Maxtemp: ${weatherModel.maxTemp.round()}',
@@ -62,6 +68,7 @@ class WeatherInfoBody extends StatelessWidget {
                 )
               ],
             ),
+            const SizedBox(height: 26),
             Text(
               weatherModel.weatherCondition,
               style: const TextStyle(
