@@ -2,7 +2,6 @@ import 'dart:developer';
 import 'package:dio/dio.dart';
 import 'package:weather_app/model/weather_model.dart';
 
-// http://api.weatherapi.com/v1/forecast.json?key=fce309462f6d4197b70123542241801&q=cairo&days=10
 class WeatherService {
   final Dio dio;
   final String baseUel = 'https://api.weatherapi.com/v1';

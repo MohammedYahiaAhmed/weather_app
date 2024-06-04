@@ -37,20 +37,6 @@ class WeatherApp extends StatelessWidget {
 
 MaterialColor getThemeColor(String? condition) {
   if (condition == null) return Colors.blue;
-  // if (condition == "Clear") {
-  //   return Colors.lightGreen;
-  // } else if (condition.contains("Clouds")) {
-  //   return Colors.grey;
-  // } else if (condition.startsWith("Rain")) {
-  //   return Colors.orange;
-  // } else if (condition.startsWith("Drizzle")) {
-  //   return Colors.cyan;
-  // } else if (condition.startsWith("Thunderstorm")) {
-  //   return Colors.deepOrange;
-  // } else {
-  //   // Default color for all other conditions
-  //   return Colors.blue;
-  // }
   switch (condition) {
     case "Sunny":
       return Colors.orange;
@@ -71,6 +57,6 @@ MaterialColor getThemeColor(String? condition) {
     case "Patchy sleet nearby":
       return Colors.purple;
     default:
-      return Colors.indigo; // Default color if no condition matches
+      return Colors.indigo;
   }
 }

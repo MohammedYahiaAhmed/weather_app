@@ -3,8 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather_app/cubits/get_weather_cubit/get_weather_cubit.dart';
 import 'package:weather_app/main.dart';
 import 'package:weather_app/model/weather_model.dart';
-// import 'package:weather_app/model/weather_model.dart';
-// import 'package:weather_app/model/weather_model.dart';
 
 class WeatherInfoBody extends StatelessWidget {
   const WeatherInfoBody({
